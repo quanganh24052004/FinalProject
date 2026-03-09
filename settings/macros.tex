@@ -1,0 +1,52 @@
+\newcommand{\eproof}{\hfill $\square$}
+\newcommand{\chm}{{\bfseries Chứng minh.}}
+\newenvironment{cm}{\chm}{\eproof}
+
+\theoremstyle{plain}
+\newtheorem{bd}{Bổ đề}[chapter]
+\providecommand*{\bdautorefname}{Bổ đề}
+\newtheorem{md}{Mệnh đề}[chapter]
+\providecommand*{\mdautorefname}{Mệnh đề}
+\newtheorem{hq}{Hệ quả}[chapter]
+\providecommand*{\hqautorefname}{Hệ quả}
+\newtheorem{dl}{\bfseries Định lý}[chapter]
+\providecommand*{\dlautorefname}{Định lý}
+\newtheorem{tc}{\bfseries Tính chất}[chapter]
+\providecommand*{\tcautorefname}{Tính chất}
+
+\newtheorem*{namedthm}{\namedthmname}
+\newcounter{namedthm}
+\makeatletter
+\newenvironment{named}[1]
+  {\def\namedthmname{#1}%
+   \refstepcounter{namedthm}%
+   \namedthm\def\@currentlabel{#1}}
+  {\endnamedthm}
+\makeatother
+
+\theoremstyle{definition}
+\newtheorem{dn}{Định nghĩa}[chapter]
+\providecommand*{\dnautorefname}{Định nghĩa}
+\newtheorem{bt}{Bài toán}[chapter]
+\providecommand*{\btautorefname}{Bài toán}
+\newtheorem{vd}{\bfseries Ví dụ}[chapter]
+\providecommand*{\vdautorefname}{Ví dụ}
+\newtheorem{algorithm}{\bfseries Thuật toán}[chapter]
+\providecommand*{\algorithmautorefname}{Thuật toán}
+\newtheorem{assumption}{\bfseries Giả thiết}[chapter]
+\providecommand*{\assumptionautorefname}{Giả thiết}
+
+\theoremstyle{remark}
+\newtheorem{kh}{ký hiệu}[chapter]
+\newtheorem{nx}{Nhận xét}[chapter]
+\newtheorem{ly}{Lưu ý}[chapter]
+
+\renewcommand{\thekh}{\textit{\thechapter.\arabic{kh}}}
+\renewcommand{\thenx}{\textit{\thechapter.\arabic{nx}}}
+\renewcommand{\thely}{\textit{\thechapter.\arabic{ly}}}
+
+\newenvironment{mproof}{\paragraph{Chứng minh:}}{\hfill$\square$}
+\newenvironment{myproof}[2] {\paragraph{Proof of {#1} {#2} :}}{\hfill$\square$}
+\DeclarePairedDelimiter{\pro}{\langle}{\rangle}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}

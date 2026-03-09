@@ -1,0 +1,33 @@
+\begin{thebibliography}{99}\rm
+\addcontentsline{toc}{chapter}{\bfseries Tài liệu tham khảo}
+
+\subsection*{Tiếng Việt}
+
+\bibitem{ThieuThuy} Trần Vũ Thiệu, Nguyễn Thị Thu Thủy. \textit{Tối ưu phi tuyến - Lý thuyết và phương pháp giải}, Nhà xuất bản Bách Khoa Hà Nội, 2021.
+
+\subsection*{Tiếng Pháp}
+\bibitem{abc} ...
+
+
+\subsection*{Tiếng Anh}
+
+\bibitem{abc} 
+\end{thebibliography}
+
+% Lưu số thứ tự cuối cùng của tài liệu tham khảo
+\newcounter{lastbibitem}
+\setcounter{lastbibitem}{\value{enumiv}}
+
+\renewcommand{\bibname}{Công trình nghiên cứu liên quan}
+\begin{thebibliography}{99}\rm
+\addcontentsline{toc}{chapter}{\bfseries Công trình nghiên cứu liên quan}
+% Bắt đầu tiếp nối số thứ tự
+\setcounter{enumiv}{\value{lastbibitem}}
+
+\subsection*{Tiếng Anh}
+\bibitem{abc} ...
+\end{thebibliography}
+
+\textit{Tóm tắt nội dung nghiên cứu}: ...
+
+%\includepdf[pages=-, scale=0.95, pagecommand={\thispagestyle{fancy}}]{paper.pdf} % Chèn toàn bộ file pdf

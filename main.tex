@@ -1,0 +1,44 @@
+\documentclass[oneside, a4paper]{book}
+
+% ==================== SETTINGS ====================
+\input{settings/packages}
+\input{settings/format}
+\input{settings/macros}
+
+\begin{document}
+
+% ==================== FRONTMATTER ====================
+\input{frontmatter/cover}
+\input{frontmatter/evaluation}
+\input{frontmatter/acknowledgement}
+\input{frontmatter/abstract}
+
+\tableofcontents % Xuất hiện mục lục.
+\pagestyle{myheadings}
+
+\newpage
+%\addcontentsline{toc}{chapter}{Danh sách bảng}
+\thispagestyle{empty}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{frontmatter/symbols}
+
+\newpage
+\listoftables
+\addcontentsline{toc}{chapter}{\bfseries Danh sách bảng}
+
+\newpage
+\renewcommand{\listfigurename}{Danh sách hình ảnh}
+\listoffigures
+\addcontentsline{toc}{chapter}{\bfseries Danh sách hình ảnh}
+
+% ==================== CHAPTERS ====================
+\input{chapters/introduction}
+% \input{chapters/chapter1}
+\input{chapters/conclusion}
+
+% ==================== BACKMATTER ====================
+\input{backmatter/references}
+
+\end{document}

@@ -1,0 +1,29 @@
+# Ignore LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.out
+*.pdf
+*.snm
+*.synctex.gz
+*.toc
+*.xdv
+
+# Ignore specific markdown files containing private information
+backlog.md
+
+# Ignore OS files
+.DS_Store
